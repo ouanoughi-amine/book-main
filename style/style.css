@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap');
+*{
+
+    box-sizing: border-box;
+    font-family:"Raleway";
+    list-style-type: none;
+text-decoration: none;
+
+    
+}
+/* *********nav bar ********** */
+body{
+    min-width: 320px  ;
+    min-height: 1722.02px;
+    margin: auto;
+    max-width: 1440px;
+}
+
+#header{
+display: flex;
+justify-content: flex-end;
+     flex-wrap: wrap;
+margin: 0;
+width: 100%;
+   
+}
+#logo{
+    margin-right:  auto;
+}
+#logo img{
+    width: 61.09px;
+    height: 19px;
+    margin:  30px 50px;
+}
+
+.nav1 a{
+  text-decoration: none;
+margin: 16px 38px ;  
+}
+.nav-bar a:hover{
+border-top: 3px solid blue;
+padding-top: 12px;
+}
+.nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    
+   margin:16px 0 0 0 ;
+   padding: 0;
+}
+
+
+#main{
+    max-width: 1440px;
+    padding: 0 50px;
+    margin:0;
+    box-sizing: border-box;
+}
+.tit{
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 22px;
+    font-weight: 700;
+    line-height:25.83px;
+}
+.zoneSearch p {
+    margin-top: 8px;
+    margin-bottom: 35px;
+
+}
+
+.filter-text{
+    margin-top: 35px;
+}
+.recherche-form{
+    display: flex;
+    align-items: center;
+    width: 377px;
+
+}
+.recherche-form .fas,fa-map-marker-alt{
+    background-color: #f2f2f2;
+    border-radius: 1rem 0 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 49px;
+    width: 50px;
+}
+.recherche-form input{
+    text-align: center;
+    border: 1px solid #f2f2f2;
+    height: 49px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.but1{
+    border: 1px solid #0065FC;
+    background-color: #0065FC;
+    border-radius: 0 1rem 1rem 0;
+    color: white;
+    height: 49px;
+    width: 132px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    
+    
+}
+.but1:hover{
+    cursor: pointer;
+    opacity: 0.9;
+    transition: 10ms ease-in-out;
+}
+.but2{
+    display: none;
+}
+.filter-list ul{
+  
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+width: 758px;
+height: 50px;
+gap: 15px;
+margin-top: 35px ;
+padding: 0;
+font-weight: bold;
+}
+.fam{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 50px;
+    border:2px solid #d9d9d9 ;
+    border-radius: 2rem;
+    padding:4px 19px;
+}
+.fam:hover{
+    background-color: #DEEBFF;
+    cursor: pointer;
+}
+.taille  {
+    display: flex;
+    align-items: center;
+    color: #0065fc;
+}
+.filter-text{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 24px;
+    margin-left: 0px;
+}
+
+#info{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #D9D9D9 ;
+    width:24px ;
+    height: 24px;
+    border-radius:  1rem;
+    
+}
+
+.first-table{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 35px 0;
+    grid-gap:40px;
+    width: 1340px;
+}
+.firstblock {
+    
+    background-color: #f2f2f2;
+    border-radius: 1rem;
+    padding: 0 15px ;
+    height: 611px;
+    
+}
+#logohebergement{
+    width: 811px;
+    height: 26px;
+    padding-left: 15px;
+    margin: 30px 0;
+}
+.tableHebergements {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+   padding: 0 15px;
+   
+   
+
+}
+
+.cardhot{
+    width:100%; 
+    height: 207.25px;
+    background-color: white; 
+    border-radius: 1rem;
+    padding: 5px;
+    box-shadow: 0 0 15px  rgba(0, 0, 0, 0.295);
+}
+.cardhot:hover{
+    cursor: pointer;
+    transform:scale(1.05) ;
+    transition: 0.1s;
+   
+}
+.cardhot img{
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+    width: 100%;
+    height: 124px;
+    
+}
+.cardhot h4,p,.stars{
+    margin: 3px 0 0 5px;
+}
+.afficherplus{
+    font-size: 18px;
+    font-weight: 700;
+    color:black;
+}
+.populaires{
+    display: grid;
+    background-color: #f2f2f2;
+    border-radius: 1rem;
+width: 429px;
+padding: 0 30px 30px 30px;
+}
+.populaires-title{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 29px;
+    margin: 30px 0;
+}
+
+    
+.populaires-cards{
+    display: grid;
+    grid-gap:30px;
+    
+
+}
+.card{
+    display: flex;
+    
+    background-color: white;
+    border-radius: 1rem;
+    padding: 5px;
+    height: 146px;
+    width: 369px;
+    box-shadow: 0 0 15px  rgba(0, 0, 0, 0.295);
+}
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.1s;
+    
+}
+.card img{
+    border-radius: 1rem 0 0 1rem;
+    object-fit: cover;
+   width: 123px;
+   height: 136px;
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 5px 5px 15px;
+   
+}
+
+.card-title{
+    margin: 10px 5px 5px 0;
+}
+.card-subtitle{
+    margin-left: 0;
+}
+.bleu{
+    color: #0065FC;
+} .gris{
+    color:#F2F2F2 ;
+}
+.Activites-a-marseille{
+   width: 100%;
+    max-width: 1340px;
+    height: 559.02px;
+    
+}
+.title-activites h2{
+    margin: 0;
+    padding: 30px;
+}
+.cards-a{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap :30px;;
+    padding: 0;
+    margin: 0 30px;
+ 
+    
+}
+.card-photo{
+    background-color:rgba(255, 255, 255, 1);
+    border-radius: 1rem;
+    box-shadow: 0 0 15px  rgba(0, 0, 0, 0.05);
+}
+.card-photo:hover{
+cursor: pointer;
+transform: scale(1.05);
+transition: 0.1s;
+}
+.card-photo img{
+    object-fit: cover;
+    width:297.5px;
+    height: 380px;
+    border-radius: 1rem 1rem 0 0;
+}
+.card-photo h4{
+    padding:20px ;
+    margin: 0;
+}
+.footer{
+    
+    margin: 35px 50px 0 50px;
+    
+}
+.footers{
+    background-color: #F2F2F2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 1340px;
+    height: 163px;
+  
+}
+.foot{
+    display: flex;
+    flex-direction: column;
+    
+    padding: 0 20px ;
+}
+.foot h3{
+    padding-top: 20px;
+    margin: 0;
+}
+.foot a{
+    padding-top: 15px;
+}
+@media (max-width:1024px){
+  body{
+    width: 100%;
+  }
+    .first-table{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .firstblock{
+    width: 100%;
+  }
+  .populaires{
+   width: 924px;
+   height: 252px;
+  }
+  .populaires-cards{
+    
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:20px;
+    width:864px ;
+  }
+  .card{
+    width: 274px;
+    height: 146px;
+  
+  }
+  .Activites-a-marseille{
+    width: 924px;
+    height: 390.02px;
+  }
+
+.card-photo{
+  
+    height: 270px;
+}
+ .card-photo img{
+    width: 100%;
+    height: 200px;
+    
+ }
+ .footer{
+width: 924px;
+
+ }
+ .footers{
+    width: 100%;
+    
+ }
+}
+@media (max-width:767px){
+    #header{
+    flex-direction: column;
+    align-items: center;
+    }
+    .log {
+        margin-left: auto;    }
+        .but1{
+            display: none;
+        }
+        .but2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #0065FC;
+            background-color: #0065FC;
+            border-radius: 1rem;
+            width: 49px;
+            height: 49px;
+            color: white;     
+        margin-left: -10px; 
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.08);  }
+    .but2:hover{
+        cursor: pointer;
+        opacity: 0.9;
+        transition: 10ms ease-in-out;
+    }
+}
