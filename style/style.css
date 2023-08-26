@@ -1,61 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap');
 *{
-
-    box-sizing: border-box;
+ box-sizing: border-box;
     font-family:"Raleway";
     list-style-type: none;
-text-decoration: none;
-
-    
+text-decoration: none;  
 }
 /* *********nav bar ********** */
 body{
-    min-width: 320px  ;
-    min-height: 1722.02px;
-    margin: auto;
-    max-width: 1440px;
+    margin: 0;
 }
-
 #header{
-display: flex;
-justify-content: flex-end;
-     flex-wrap: wrap;
-margin: 0;
-width: 100%;
-   
+    display:flex;
+     flex-wrap:wrap;
+     margin: 0  auto 0;
+     max-width: 1440px;
+     width: 93%;
 }
 #logo{
     margin-right:  auto;
 }
-#logo img{
+.log img{
     width: 61.09px;
-    height: 19px;
-    margin:  30px 50px;
+    height: auto;
+    margin-top: 30px ;
 }
 
 .nav1 a{
-  text-decoration: none;
-margin: 16px 38px ;  
-}
-.nav-bar a:hover{
-border-top: 3px solid blue;
-padding-top: 12px;
+    color: inherit;
+    text-decoration: none;
+    margin: 16px 38px ;  
 }
 .nav-bar {
     display: flex;
     flex-wrap: wrap;
-    
-   margin:16px 0 0 0 ;
-   padding: 0;
+    margin:16px 0 0 0 ;
+    padding: 0;
+}
+.nav-bar a:hover{
+    border-top: 3px solid #0065FC;
+    padding-top: 12px;
+    color: #0065FC;
 }
 
-
+/* *******main****** */
 #main{
     max-width: 1440px;
-    padding: 0 50px;
-    margin:0;
-    box-sizing: border-box;
+    width: 93%;
+    margin:0 auto 0;
 }
+/* *****zone search********   */
 .tit{
     margin-top: 30px;
     margin-bottom: 0;
@@ -66,7 +59,6 @@ padding-top: 12px;
 .zoneSearch p {
     margin-top: 8px;
     margin-bottom: 35px;
-
 }
 
 .filter-text{
@@ -75,8 +67,8 @@ padding-top: 12px;
 .recherche-form{
     display: flex;
     align-items: center;
-    width: 377px;
-
+    max-width: 377px;
+    width: 100%;
 }
 .recherche-form .fas,fa-map-marker-alt{
     background-color: #f2f2f2;
@@ -87,15 +79,18 @@ padding-top: 12px;
     height: 49px;
     width: 50px;
 }
-.recherche-form input{
+#placehoders{
     text-align: center;
     border: 1px solid #f2f2f2;
     height: 49px;
     font-weight: bold;
     font-size: 1.1rem;
 }
+::placeholder {
+   color : black;
+}
 .but1{
-    border: 1px solid #0065FC;
+    border: 1px solid transparent;
     background-color: #0065FC;
     border-radius: 0 1rem 1rem 0;
     color: white;
@@ -103,8 +98,6 @@ padding-top: 12px;
     width: 132px;
     font-weight: bold;
     font-size: 1.1rem;
-    
-    
 }
 .but1:hover{
     cursor: pointer;
@@ -114,19 +107,21 @@ padding-top: 12px;
 .but2{
     display: none;
 }
-.filter-list ul{
-  
-display: flex;
-align-items: center;
-flex-wrap: wrap;
-width: 758px;
-height: 50px;
-gap: 15px;
-margin-top: 35px ;
-padding: 0;
-font-weight: bold;
+/* ******* Zone filter ********* */
+.filters{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 35px;
 }
-.fam{
+.filtre-ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 0;
+    padding-left: 15px;
+}
+.list-filter{
     display: flex;
     align-items: center;
     gap: 10px;
@@ -134,70 +129,53 @@ font-weight: bold;
     border:2px solid #d9d9d9 ;
     border-radius: 2rem;
     padding:4px 19px;
+    font-size: 16px;
+    font-weight: 700;
 }
-.fam:hover{
+.list-filter:hover{
     background-color: #DEEBFF;
     cursor: pointer;
-}
-.taille  {
-    display: flex;
-    align-items: center;
-    color: #0065fc;
 }
 .filter-text{
     display: flex;
     align-items: center;
     gap: 10px;
-    height: 24px;
     margin-left: 0px;
 }
 
 #info{
-    
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid #D9D9D9 ;
-    width:24px ;
+    width:24px; 
     height: 24px;
-    border-radius:  1rem;
-    
+    border-radius: 50%;
 }
 
 .first-table{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    margin: 35px 0;
-    grid-gap:40px;
-    width: 1340px;
+    display: flex;
+    margin-top:35px; 
+    gap: 30px;
 }
 .firstblock {
-    
     background-color: #f2f2f2;
     border-radius: 1rem;
     padding: 0 15px ;
-    height: 611px;
-    
+    width: 66%;
 }
 #logohebergement{
-    width: 811px;
-    height: 26px;
-    padding-left: 15px;
+ padding-left: 15px;
     margin: 30px 0;
 }
 .tableHebergements {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 30px;
+    grid-template-columns: repeat(3,1fr);
    padding: 0 15px;
-   
-   
-
+   grid-gap:30px;
 }
 
 .cardhot{
-    width:100%; 
-    height: 207.25px;
     background-color: white; 
     border-radius: 1rem;
     padding: 5px;
@@ -207,77 +185,70 @@ font-weight: bold;
     cursor: pointer;
     transform:scale(1.05) ;
     transition: 0.1s;
-   
 }
 .cardhot img{
     object-fit: cover;
-    border-radius: 1rem 1rem 0 0;
+    border-radius: 1rem 1rem 0 0; 
     width: 100%;
-    height: 124px;
-    
+    height: 100px;
 }
 .cardhot h4,p,.stars{
     margin: 3px 0 0 5px;
 }
-.afficherplus{
+.afficherplus {
     font-size: 18px;
     font-weight: 700;
-    color:black;
+    padding:30px 20px;
+}
+.afficherplus a{
+    color: inherit;
 }
 .populaires{
-    display: grid;
     background-color: #f2f2f2;
     border-radius: 1rem;
-width: 429px;
-padding: 0 30px 30px 30px;
+    width: 33%;
+    padding: 0 30px 30px 30px;
 }
 .populaires-title{
     display:flex;
     align-items: center;
     justify-content: space-between;
-    height: 29px;
+}
+.section-title{
     margin: 30px 0;
 }
-
-    
 .populaires-cards{
-    display: grid;
+    display:grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: repeat(3,7.9rem);
     grid-gap:30px;
-    
-
 }
-.card{
+.populaires-cards .card-populaire{
     display: flex;
-    
     background-color: white;
     border-radius: 1rem;
     padding: 5px;
-    height: 146px;
-    width: 369px;
     box-shadow: 0 0 15px  rgba(0, 0, 0, 0.295);
 }
-.card:hover{
+.card-populaire:hover{
     cursor: pointer;
     transform: scale(1.05);
     transition: 0.1s;
-    
 }
-.card img{
+
+.card-populaire img{
     border-radius: 1rem 0 0 1rem;
-    object-fit: cover;
-   width: 123px;
-   height: 136px;
+    max-width: 123px;
+    width: 100%;
 }
 .card-content{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0 5px 5px 15px;
-   
+    padding: 5px 0 0 10px;
 }
-
 .card-title{
-    margin: 10px 5px 5px 0;
+    margin: 0;
 }
 .card-subtitle{
     margin-left: 0;
@@ -288,62 +259,60 @@ padding: 0 30px 30px 30px;
     color:#F2F2F2 ;
 }
 .Activites-a-marseille{
-   width: 100%;
-    max-width: 1340px;
-    height: 559.02px;
-    
+    margin:35px auto 0;
 }
 .title-activites h2{
     margin: 0;
     padding: 30px;
 }
+
 .cards-a{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap :30px;;
+   display: flex;
+   justify-content: center;
+    gap :30px;
     padding: 0;
-    margin: 0 30px;
- 
-    
+    margin: 0 30px 0 ;
 }
 .card-photo{
+    width: 100%;
     background-color:rgba(255, 255, 255, 1);
     border-radius: 1rem;
     box-shadow: 0 0 15px  rgba(0, 0, 0, 0.05);
 }
 .card-photo:hover{
-cursor: pointer;
-transform: scale(1.05);
-transition: 0.1s;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.1s;
 }
 .card-photo img{
     object-fit: cover;
-    width:297.5px;
-    height: 380px;
+    width:100%;
+    max-height: 380px;
+    height: 80%;
     border-radius: 1rem 1rem 0 0;
 }
 .card-photo h4{
-    padding:20px ;
-    margin: 0;
+    display: flex;
+    align-items: center;
+    padding: 20px 19px;
+    margin: 10px 0 0 0;
 }
 .footer{
-    
-    margin: 35px 50px 0 50px;
+    max-width: 1440px;
+    width: 93%;
+   margin: 3rem auto 0;
     
 }
-.footers{
+.list-footers{
     background-color: #F2F2F2;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 1340px;
-    height: 163px;
-  
+    padding-bottom: 10px;
 }
 .foot{
     display: flex;
     flex-direction: column;
-    
-    padding: 0 20px ;
+    padding-left:20px ;
 }
 .foot h3{
     padding-top: 20px;
@@ -351,82 +320,176 @@ transition: 0.1s;
 }
 .foot a{
     padding-top: 15px;
+    color: inherit;
 }
 @media (max-width:1024px){
-  body{
-    width: 100%;
-  }
+    .filters{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .filtre-ul{
+        padding: 0;
+    }
     .first-table{
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 100%;
-  }
-  .firstblock{
-    width: 100%;
-  }
-  .populaires{
-   width: 924px;
-   height: 252px;
-  }
-  .populaires-cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .firstblock{
+        width: 100%;
+    }
+    .populaires{
+        width: 100%;
+    }
+    .populaires-cards{
+        display: flex;
+    }
+    .card-populaire{
+        max-width: 274.67px;
+        width: 100%;
+        max-height:146px ;
+    }
+    .card-populaire img {
+        object-fit: cover;
+        max-width: 91.67px;
+        width: 100%;
+    }
     
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap:20px;
-    width:864px ;
-  }
-  .card{
-    width: 274px;
-    height: 146px;
-  
-  }
-  .Activites-a-marseille{
-    width: 924px;
-    height: 390.02px;
-  }
-
-.card-photo{
-  
-    height: 270px;
-}
- .card-photo img{
-    width: 100%;
-    height: 200px;
-    
- }
- .footer{
-width: 924px;
-
- }
- .footers{
-    width: 100%;
-    
- }
+    .cards-a{
+        max-height: 270px;
+        height: 100%;
+    }
+    .card-photo img{
+        height: 65%;
+    }
+    .card-photo h4{
+        margin: 0;
+    }
 }
 @media (max-width:767px){
+  
+    #main{
+        margin: 0;
+        width: 100%;
+    }
     #header{
-    flex-direction: column;
-    align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+    }
+    .nav1{
+        width: 100%;
+    }
+    .nav-bar a:hover{
+        border-top: none;
+        padding: 0;  
+    }
+    .log-hebergement{
+        border-bottom: 3px solid gray;
+        display: flex;
+        justify-content: center;
+        flex-basis: 50%;
+    }
+    .log-activites{
+        border-bottom: 3px solid gray;
+        display: flex;
+        justify-content: center;
+        flex-basis: 50%;
+    }
+    .log-hebergement:hover{
+        border-bottom: 3px solid blue;
+    }
+    .log-activites:hover{
+        border-bottom: 3px solid blue;
+    }
+    .zoneSearch{
+        margin: 0 8px 0 20px;
+    }
+    .zone-filter{
+        margin-left: 20px;
     }
     .log {
-        margin-left: auto;    }
-        .but1{
-            display: none;
-        }
-        .but2{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid #0065FC;
-            background-color: #0065FC;
-            border-radius: 1rem;
-            width: 49px;
-            height: 49px;
-            color: white;     
+        margin-left: auto;    
+    }
+    .recherche-form input{
+         width: 73%;    
+    }
+    .but1{
+        display: none;
+    }
+    .but2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #0065FC;
+        background-color: #0065FC;
+        border-radius: 1rem;
+        width: 49px;
+        height: 49px;
+        color: white;
         margin-left: -10px; 
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.08);  }
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.08);  }
     .but2:hover{
         cursor: pointer;
         opacity: 0.9;
         transition: 10ms ease-in-out;
     }
+    .firstblock{background-color: white;  
+        max-width: 767px;
+        width: 100%;
+    }
+    .tableHebergements{
+        display: flex;
+        flex-direction: column;
+    }
+    .populaires{
+        height: 569px;
+        order: -1;  
+        border-radius: 0;
+    }
+  
+    .populaires-cards{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .card-populaire{
+        max-width: 710px; 
+        max-height: 130px;
+         height: 100%; 
+    }
+   .card-populaire img {
+    object-fit: cover;
+   }
+   .Activites-a-marseille{
+   max-height: 1000px;
+   }
+    .cards-a{
+  display: block;
+  max-height: 1000px;
+    } 
+    .card-photo{
+        margin-bottom: 15px;
+    }
+    .card-photo img{
+        object-fit: cover;
+        background-position: ;
+        height: 150px;
+    }
+   .footer{
+    width: 100%;
+   }
+   .list-footers{
+    display: flex;
+    flex-direction: column;
+    gap:50px ;
+    padding: 30px;
+   }
+   .foot{
+    gap:15px;
+    padding: 0;
+   }
 }
