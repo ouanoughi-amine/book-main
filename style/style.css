@@ -387,22 +387,20 @@ body{
         border-top: none;
         padding: 0;  
     }
-    .log-hebergement{
-        border-bottom: 3px solid gray;
+    .log-h-a{
         display: flex;
-        justify-content: center;
         flex-basis: 50%;
     }
-    .log-activites{
-        border-bottom: 3px solid gray;
+  
+    .log-h-a a{
         display: flex;
         justify-content: center;
-        flex-basis: 50%;
+        width: 100%;
+        margin: 0;
+        padding-bottom: 15px;
+        border-bottom: 3px solid gray;
     }
-    .log-hebergement:hover{
-        border-bottom: 3px solid blue;
-    }
-    .log-activites:hover{
+    .log-h-a a:hover{
         border-bottom: 3px solid blue;
     }
     .zoneSearch{
@@ -411,11 +409,14 @@ body{
     .zone-filter{
         margin-left: 20px;
     }
+    .list-filter{
+        width: 160px;
+    }
     .log {
         margin-left: auto;    
     }
     .recherche-form input{
-         width: 73%;    
+         width: 71%;    
     }
     .but1{
         display: none;
@@ -459,37 +460,36 @@ body{
     .card-populaire{
         max-width: 710px; 
         max-height: 130px;
-         height: 100%; 
+        height: 100%; 
     }
    .card-populaire img {
-    object-fit: cover;
+        object-fit: cover;
    }
    .Activites-a-marseille{
-   max-height: 1000px;
+        max-height: 1000px;
    }
     .cards-a{
-  display: block;
-  max-height: 1000px;
+        display: block;
+        max-height: 1000px;
     } 
     .card-photo{
         margin-bottom: 15px;
     }
     .card-photo img{
         object-fit: cover;
-        background-position: ;
         height: 150px;
     }
    .footer{
-    width: 100%;
+        width: 100%;
    }
    .list-footers{
-    display: flex;
-    flex-direction: column;
-    gap:50px ;
-    padding: 30px;
+        display: flex;
+        flex-direction: column;
+        gap:50px ;
+        padding: 30px;
    }
    .foot{
-    gap:15px;
-    padding: 0;
+        gap:15px;
+        padding: 0;
    }
 }
