@@ -77,7 +77,7 @@ body{
     width: 100%;
 }
 .recherche-form .fas,fa-map-marker-alt{
-    background-color: var(--grey);
+    background-color: var(--lightgrey);
     border-radius: 1rem 0 0 1rem;
     display: flex;
     justify-content: center;
@@ -87,7 +87,7 @@ body{
 }
 #placehoders{
     text-align: center;
-    border: 1px solid var(--grey);
+    border: 1px solid var(--lightgrey);
     height: 49px;
     font-weight: bold;
     font-size: 1.1rem;
@@ -132,14 +132,14 @@ body{
     align-items: center;
     gap: 10px;
     height: 50px;
-    border:2px solid var(--lightgrey) ;
+    border:2px solid var(--grey) ;
     border-radius: 2rem;
     padding:4px 19px;
     font-size: 16px;
     font-weight: 700;
 }
 .list-filter:hover{
-    background-color: var(--grey);
+    background-color: var(--lightblue);
     cursor: pointer;
 }
 .filter-text{
@@ -181,13 +181,13 @@ body{
    padding: 0 15px;
    grid-gap:30px;
 }
-
 .cards-hotel{
     background-color: var(--white); 
     border-radius: 1rem;
     padding: 5px;
     box-shadow: 0 0 15px  rgba(0, 0, 0, 0.3);
 }
+
 .cards-hotel:hover{
     cursor: pointer;
     transform:scale(1.05) ;
@@ -245,6 +245,7 @@ body{
 }
 
 .card-populaire img{
+    object-fit: cover;
     border-radius: 1rem 0 0 1rem;
     max-width: 123px;
     width: 100%;
@@ -398,7 +399,7 @@ body{
         padding: 0;  
     }
     .heb-acti{
-        border-bottom: 3px solid var(--grey);
+        border-bottom: 3px solid var(--lightgrey);
         display: flex;
         justify-content: center;
         flex-basis: 50%;
@@ -453,6 +454,19 @@ body{
     .tableHebergements{
         display: flex;
         flex-direction: column;
+    }
+    .hotel-2{
+        order: 4;
+    }
+   .hotel-3{
+    order: 1;
+   }
+   .hotel-4{
+    order: 2;
+   
+    }
+    .hotel-6{
+        order: 3;
     }
     .populaires{
         height: 569px;
