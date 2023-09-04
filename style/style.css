@@ -4,6 +4,7 @@
     font-family:"Raleway";
     list-style-type: none;
     text-decoration: none;  
+
 }
 :root{
     --blue: #0065FC;
@@ -13,6 +14,7 @@
     --white: rgba(255, 255, 255, 1)
 
 }
+
 body{
     margin: 0;
 }
@@ -63,8 +65,7 @@ body{
     line-height:25.83px;
 }
 .zoneSearch p {
-    margin-top: 8px;
-    margin-bottom: 35px;
+    margin: 8px 0 35px 0;
 }
 
 .filter-text{
@@ -73,8 +74,6 @@ body{
 .recherche-form{
     display: flex;
     align-items: center;
-    max-width: 377px;
-    width: 100%;
 }
 .recherche-form .fas,fa-map-marker-alt{
     background-color: var(--lightgrey);
@@ -94,7 +93,9 @@ body{
 }
 ::placeholder {
    color : black;
+   opacity: 1;
 }
+
 .but1{
     border: 1px solid transparent;
     background-color: var(--blue);
